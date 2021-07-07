@@ -20,7 +20,7 @@ class SubmitForm extends React.Component{
 
             this.props.addTask(newItem);
 
-            this.state.tasksCount++;
+            this.state.tasksCount = this.state.tasksCount + 1;
             this._inputElement.value = "";
         } 
         e.preventDefault();
